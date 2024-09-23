@@ -1,4 +1,5 @@
 import {View, TextView, Text, StyleSheet} from 'react-native';
+import React, (userState) from 'react';
 
 const styles = StyleSheet.create({
 
@@ -12,10 +13,11 @@ const styles = StyleSheet.create({
 });
 
 export default function App(){
+  const {fullname, setFullname] = userState("Kelvin")
 
   return(
     <View>
-      <Text>Hello, World</Text>
+      <TextInput placeholder>Hello, World</Text>
     </View>
   )
 };
